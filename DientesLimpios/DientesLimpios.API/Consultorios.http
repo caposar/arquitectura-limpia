@@ -4,9 +4,29 @@ GET {{DientesLimpios.API_HostAddress}}/019DBD19-4253-7561-B468-62CF3282CB53
 Accept: application/json
 
 ###
+
+GET {{DientesLimpios.API_HostAddress}}
+Accept: application/json
+
+###
+
 POST {{DientesLimpios.API_HostAddress}}
 Content-Type: application/json
 
 {
-  "nombre": "Consultorio A"
+  "nombre": "Consultorio B"
 }
+
+###
+
+PUT {{DientesLimpios.API_HostAddress}}/019dbffa-4dab-7919-a50f-f8fc614796a0
+Content-Type: application/json
+
+{
+  "nombre": "Consultorio B - Actualizado"
+}
+
+###
+
+DELETE {{DientesLimpios.API_HostAddress}}/019dbffa-4dab-7919-a50f-f8fc614796a0
+Accept: application/json

@@ -10,8 +10,8 @@ namespace DientesLimpios.Aplicacion.CasosDeUso.Consultorios.Comandos.CrearConsul
         public ValidadorComandoCrearConsultorio()
         {
             RuleFor(p => p.Nombre)
-            .NotEmpty().WithMessage("El campo {PropertyName} es requerido");
-
+            .NotEmpty().WithMessage("El campo {PropertyName} es requerido")
+            .MaximumLength(150).WithMessage("La lontigud del campo {PropertyName} debe ser menor o igual a {MaxLength}");
         }
     }
 }

@@ -10,6 +10,11 @@ namespace DientesLimpios.Dominio.ObjetosDeValor
         public DateTime Inicio { get; }
         public DateTime Fin { get; }
 
+        private IntervaloDeTiempo()
+        {
+
+        }
+
         public IntervaloDeTiempo(DateTime inicio, DateTime fin)
         {
             if (inicio >= fin)

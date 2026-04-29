@@ -1,0 +1,34 @@
+@DientesLimpios.API_HostAddress = http://localhost:5112/api/pacientes
+
+GET {{DientesLimpios.API_HostAddress}}/019dc701-e6bd-7823-8cc5-920c938eba60
+Accept: application/json
+
+###
+
+GET {{DientesLimpios.API_HostAddress}}?pagina=1&registrosPorPagina=10
+Accept: application/json
+
+###
+
+POST {{DientesLimpios.API_HostAddress}}
+Content-Type: application/json
+
+{
+  "nombre": "Felipe Gavilán",
+  "email": "felipe@ejemplo.com"
+}
+
+###
+
+PUT {{DientesLimpios.API_HostAddress}}/019dca94-fe96-7219-83e3-bbb53ab4df07
+Content-Type: application/json
+
+{
+  "nombre": "Cesar Paredes",
+  "email": "chpvhr@gmail.com"
+}
+
+###
+
+DELETE {{DientesLimpios.API_HostAddress}}/019dc2ab-ad6b-762d-9fc2-5f184e4283ef
+Accept: application/json
