@@ -1,4 +1,5 @@
-﻿using DientesLimpios.Dominio.Enums;
+﻿using DientesLimpios.Dominio.Comunes;
+using DientesLimpios.Dominio.Enums;
 using DientesLimpios.Dominio.Excepciones;
 using DientesLimpios.Dominio.ObjetosDeValor;
 using System;
@@ -7,7 +8,7 @@ using System.Text;
 
 namespace DientesLimpios.Dominio.Entidades
 {
-    public class Cita
+    public class Cita : EntidadAuditable
     {
         public Guid Id { get; private set; }
         public Guid PacienteId { get; private set; }

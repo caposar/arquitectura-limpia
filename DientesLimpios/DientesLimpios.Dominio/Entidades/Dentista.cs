@@ -1,4 +1,5 @@
-﻿using DientesLimpios.Dominio.Excepciones;
+﻿using DientesLimpios.Dominio.Comunes;
+using DientesLimpios.Dominio.Excepciones;
 using DientesLimpios.Dominio.ObjetosDeValor;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace DientesLimpios.Dominio.Entidades
 {
-    public class Dentista
+    public class Dentista : EntidadAuditable
     {
         public Guid Id { get; private set; }
         public string Nombre { get; private set; } = null!;
